@@ -5,10 +5,10 @@ This readme has the instructions for the first week of class. Every week you wil
 ____
 ## Table of Contents:
 1. [ To Do List](#todo)
-1. [ Setup Instructions](#github)
+1. [ Setup Instructions](#setup)
   - [ GitHub Install](#githubinst)
+  - [GitKraken Install](#GitKraken)
   - [ Repo Cloning](#repo)
-  - [ Text Editor](#atom)
 1. [ Homework Setup](#classroom)
 1. [ Training Activities](#training)
 1. [ Forecast Assignment](#assignment)
