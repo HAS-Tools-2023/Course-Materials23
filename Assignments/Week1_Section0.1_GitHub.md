@@ -51,7 +51,7 @@ ___
 ___
 <a name="classroom"></a>
 ## Setup Instructions Part 2 - Homework and GitHub Classroom
-1. Once you have setup your GitHub account and cloned the course repo use the following link to make your own homework repo: : https://classroom.github.com/a/tdtRAvpF
+1. Once you have setup your GitHub account and cloned the course repo use the following link to make your own homework repo: : https://classroom.github.com/a/uvPXbhWA
 
   - Follow the instructions from the link and you should see a repo created in our GitHub organization with your name on it [here](https://github.com/HAS-Tools-2023)
   -  *Note:* After you accept an assignment for the first time, we will send you an invite to join the classroom organization as a member. **Please accept this.** You will probably get an email with the invitation, but you should also see a link at the top of your main GitHub page.
