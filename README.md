@@ -10,7 +10,11 @@ Refer to the **Forecast** repo for all information and materials relevant for th
 
 ____
 ## Class documents:
-- This section will be expanded throughout the course as we build class resources
+- Registering for a GitHub account [video](https://youtu.be/49HwUicR4v4)
+- GitHub install for [Windows](https://youtu.be/5yvGa34xaRY) and for [Mac](https://youtu.be/lPBdBZJ4cZc)
+- Linking Github and Gitkraken [video](https://youtu.be/9GvAJqBQS7o)
+- How to clone a repo [video](https://youtu.be/QO__GW-2v8o)
+- How to push to a repo [video](https://youtu.be/wyl1HnnPAwY)
 
 ____
 ## Online Textbooks and General Python Resources

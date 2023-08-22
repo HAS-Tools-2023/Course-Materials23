@@ -40,6 +40,7 @@ ___
 
 <a name="repo"></a>
 #### 3. Clone the course materials repo to your computer
+- You can watch an overview of this step [here](https://youtu.be/QO__GW-2v8o)
 - Before you clone I recommend you start by creating a directory for this class where you will keep all of your repos. **NOTE:** It is best to create this directory as a local directory on your computer don't put it on OneDrive if you are using that.  I recommend you name this directory `HAS_Tools`
 - In *GitKraken* got to `File/Clone Repo`
 - Use the `Browse` button to navigate to the directory you created for the class that you want your repo cloned to.
@@ -97,6 +98,7 @@ This week you will generate your first streamflow forecast. The rules for this f
 - Look at the streamflow values and decide what your forecasted flows will be (remember no math is expected here, the idea here is just to take a look at the historical flow and use your own judgement to make a forecast).  You need to make two forecasts all of which should be expressed as average daily flow in cfs (1) flow next week, (2) flow two weeks from now.
 
 ### 3. Submit your first forecast to the competition
+- [This video](https://youtu.be/wyl1HnnPAwY) provides a walk through of pushing to a repo. 
 - Clone the main class Forecasting repo from our course organization website [GitHub](https://github.com/HAS-Tools-2023) (see instructions above and remember **DO NOT clone it inside another repo** just clone it into the directory for this class next to your others)
 - Open the repo in GitKraken. To avoid conflicts make sure your local repo is up to date before you submit your forecast. You can do by pushing `pull` button on GitKraken.
 - Find the csv with your last name in the *forecast_entries* folder and enter your forecasts. Enter your forecasts on the row for foercast #1. A few notes:
@@ -114,4 +116,4 @@ In addition to submitting your numerical forecasts to the forecast competition y
 
 - Write a few sentences describing the forecast you made and rational for making it.  Note that we aren't doing anything fancy this week so your rational can be very simple, I'm not looking for a lot of text or any external research. This is really just to practice getting files submitted on GitHub. Save your file.
 
-- When you are done open yor homework repo in GitKraken and  `Stage`, `Committ`, and `Push` your changes to upload your changes.
+- When you are done open yor homework repo in GitKraken and  `Stage`, `Commit`, and `Push` your changes to upload your changes.
