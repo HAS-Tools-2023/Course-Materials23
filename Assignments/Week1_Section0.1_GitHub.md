@@ -110,7 +110,7 @@ This week you will generate your first streamflow forecast. The rules for this f
 ### 4. Submit your first forecast homework assignment
 In addition to submitting your numerical forecasts to the forecast competition you also need to submit a description of your forecast through your homework repo. This is what I will be grading for credit.
 
-- Create a file named `lastname_HW1.txt` in the `submission` folder of your homework repo. The easiest way  to do this is just to create a new file in vs code.
+- Create a file named `lastname_HW1.txt` in the `submission` folder of your homework repo. You can do this with your favorite text editor.
 
 - Include a header in your file that includes, your name, the date, and the assignment number
 
