@@ -80,8 +80,15 @@ ___
 ## Assignment 1: First Forecast
 This week you will generate your first streamflow forecast. The rules for this forecast are simple you will use only Excel to generate your forecasts and the most complicated mathematical operation you can do is take an average. You should make your forecast by simply looking at the historical streamflow and making your best guess of what you think it will be in the future based on whatever logic you want (no fancy calculations!). Don't worry we will get more sophisticated from here, but this week we start basic.
 
-#### 1. Download the stream gauge observations to your homework repo
- The USGS NWIS website has all of the USGS maintained observation sites in the country. Go to the USGS website [https://waterdata.usgs.gov/nwis/dv/?site_no=09506000&agency_cd=USGS&amp;referred_module=sw] and download the daily streamflow data for station  *09506000 Verde River Near Camp Verde* using the following parameters:
+#### 1. Look at the stream gauge observations for the Verde River to make your first forecast. 
+ The USGS NWIS website has all of the USGS maintained observation sites in the country. Go to the USGS website [https://waterdata.usgs.gov/nwis/dv/?site_no=09506000&agency_cd=USGS&amp;referred_module=sw] and look at the streamflow values for the *Verde River Near Camp Verde (Gauge # 09506000)*.  
+
+ - You can make your forecast just by looking at the values or if you want to be a little more scientific about it you can download the data and do some calculations.  If you want to download it see the instructions in step 2
+
+ -You need to make two forecasts all of which should be expressed as average daily flow in cfs (1) flow next week, (2) flow two weeks from now.
+
+### Optionsal Step 2. Download the data and do some analysis to come up with your forecast
+ - To download the daily streamflow data you can use the following parameters:
    - Daily Data
    - Parameter 00060 Discharge (mean)
    - Start date = 1989-01-01
@@ -89,13 +96,11 @@ This week you will generate your first streamflow forecast. The rules for this f
    - Select 'tab separated'
 
 - The data will load in a new tab of your browser. Right click and save it as a *streamflow_week1.txt* file in the *data* folder of your **homework repo** ((i.e. not the main class repo)).
-
-### 2. Import the data into Excel to look at it
-- Open a new Excel workbook and copy and paste the text file into it.
+- You can then Open a new Excel workbook and copy and paste the text file into it.
 - Use the `text to columns` option in the `data menu` and select `delimited` and by `tabs` to separate the data into columns (If tab doesn't work you can also delimit by `space`)
-- Save your workbook as *streamflow_week1.xlsx* in the *assignment_1* folder of **your homework repo** .
+- Save your workbook as *streamflow_week1.xlsx* in the *Homework_Working* folder of **your homework repo** (up to you if you want to create a separate folder for Assignment 1).
 - Read the documentation at the top of the file to understand the format of the data you have downloaded.
-- Look at the streamflow values and decide what your forecasted flows will be (remember no math is expected here, the idea here is just to take a look at the historical flow and use your own judgement to make a forecast).  You need to make two forecasts all of which should be expressed as average daily flow in cfs (1) flow next week, (2) flow two weeks from now.
+- Look at the streamflow values and decide what your forecasted flows will be (remember no math is expected here, the idea here is just to take a look at the historical flow and use your own judgement to make a forecast).  
 
 ### 3. Submit your first forecast to the competition
 - [This video](https://youtu.be/wyl1HnnPAwY) provides a walk through of pushing to a repo. 
@@ -103,14 +108,14 @@ This week you will generate your first streamflow forecast. The rules for this f
 - Open the repo in GitKraken. To avoid conflicts make sure your local repo is up to date before you submit your forecast. You can do by pushing `pull` button on GitKraken.
 - Find the csv with your last name in the *forecast_entries* folder and enter your forecasts. Enter your forecasts on the row for foercast #1. A few notes:
     - Make sure you just enter numbers (i.e. enter 5 not 5 cfs)
-    - Don't convert the file to an xlsx file keep it as a csv.
+    - **Don't convert the file to an xlsx file keep it as a csv.**
     - the one '1week' and '2week' refers to your forecasts for next week and the following week.  You can refer to the `forecasts_dates` files in the Forecast repo for more details.
 - Save your changes. THen in GitKraken, Stage, commit, and push your changes (see the example video for how to do this).
 
 ### 4. Submit your first forecast homework assignment
 In addition to submitting your numerical forecasts to the forecast competition you also need to submit a description of your forecast through your homework repo. This is what I will be grading for credit.
 
-- Create a file named `lastname_HW1.txt` in the `submission` folder of your homework repo. You can do this with your favorite text editor.
+- Create a file named `lastname_HW1.txt` in the `Homework_Submissions` folder of your homework repo. You can do this with your favorite text editor.
 
 - Include a header in your file that includes, your name, the date, and the assignment number
 
