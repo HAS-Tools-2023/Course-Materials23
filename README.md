@@ -15,6 +15,8 @@ ____
 - Linking Github and Gitkraken [video](https://youtu.be/9GvAJqBQS7o)
 - How to clone a repo [video](https://youtu.be/QO__GW-2v8o)
 - How to push to a repo [video](https://youtu.be/wyl1HnnPAwY)
+- Setting up a python environment [video](https://youtu.be/dzp_mWcWP9Y)
+- Setting up VSCode [video](https://youtu.be/vA0ONmzO0fU)
 
 ____
 ## Online Textbooks and General Python Resources
