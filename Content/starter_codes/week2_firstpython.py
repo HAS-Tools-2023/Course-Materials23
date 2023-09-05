@@ -13,7 +13,12 @@ import os
 # Step 3 - Read in the file in as dataframe
 # You will need to change the filename to match what you downloaded
 filename = 'streamflow_week2.txt'
-filepath = os.path.join('../data', filename)
+#You will also need to change this path to match the location of the file relative to where the scrip is
+# '../data' means one directory up in a directory called data
+# '../../data' would mean two directories up in a diretory called data
+# './' means in this directory. You can put your data file wherever you want but just need to make sure you 
+# point your python script to it correctly. 
+filepath = os.path.join('../../data', filename)
 
 data=pd.read_table(filepath, sep = '\t', skiprows=30, 
         names=['agency_cd', 'site_no', 'datetime', 'flow', 'code']
