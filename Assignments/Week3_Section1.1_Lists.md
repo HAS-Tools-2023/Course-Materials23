@@ -71,8 +71,8 @@ ___
   1. What is GitHub and what is Git (and how are they different)
   2. What is a repo and why is it different from a folder
   3. The difference between local, remote, origin
-  2. Ways to get your own version of a repo and how they are differnt (Clone, Fork)
+  2. Ways to get your own version of a repo and how they are different (Clone, Fork)
   3. How to add changes to your repo: Staging, committing and pushing  
-  3. How to get the latest remote chagnes locally: Pulling vs fretching 
-  3. Branchess -- what they are and why we use them
+  3. How to get the latest remote changes locally: Pulling vs fetching 
+  3. Branches -- what they are and why we use them
   4. What is a pull request and why would we use it
