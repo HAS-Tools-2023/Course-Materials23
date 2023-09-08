@@ -6,24 +6,36 @@
 # although you can use it if you'd like
 import numpy as np
 
-# %%  1.)
+# %% 1.)
+#Given the following list write print statements that spell the word
+#'bad' as many ways as possible by pulling from mylist
+mylist = ['a', 'b', 'c', 'd']
+
+print(mylist[-3]+mylist[0]+mylist[-1])
+
+
+print(mylist[1]+mylist[0]+mylist[3])
+test=mylist[1]+mylist[0]+mylist[3]
+print(test)
+
+# %%  2.)
 # Write code to translate a boolean value
 # to a string using a conditional statment.
 #  Specifically, if the `testval` 
 # is `True` then print "Yes" and if it is
 # `False` then print "No"
 testval = bool(np.random.choice([0, 1]))
+print(testval)
 # TODO: Your code here
 message = None
-# ...
+
+if testval:
+    print('yes')
+else: 
+    print('no')
 print(message)
 
 #1.b Can you translate this to a string without a conditional statement?
-
-# %% 2.)
-#Given the following list write print statements that spell the word 
-#'bad' as many ways as possible by pulling from mylist
-mylist = ['a', 'b', 'c', 'd']
 
 # %% 3.)
 # You will be given a random integer, and 

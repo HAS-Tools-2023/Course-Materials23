@@ -71,6 +71,8 @@ This week you should submit the following (for more details on submitting throug
 
 3. The python script you wrote to do your homework.  Just copy this script into the submission folder with the name 'lastname_HWx.py'
 
+4. A python script that shows your solutions to the in class exercises this week. 
+
 #### Assignment questions
 In addition to providing a summary of the forecast values you picked and why include the following analysis in your homework submission. Note that questions 3-5 are the same as last weeks questions, however this time you are expected to calculate your answer using the numpy array rather than lists.
 
@@ -86,3 +88,5 @@ In addition to providing a summary of the forecast values you picked and why inc
 4. How would your answer to the previous question change if you considered only daily flows in or before 2000? Same question for the flows in or after the year 2010? (again report total number of times and percentage)
 
 5. How does the daily flow generally change from the first half of September to the second?
+
+6. Reflect on the in class exercises this week. What parts are you having trouble with? Are there questions that don't make sense to you? 
