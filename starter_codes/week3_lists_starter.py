@@ -30,9 +30,9 @@ data=pd.read_table(filepath, sep = '\t', skiprows=30,
 
 # Expand the dates to year month day
 data[["year", "month", "day"]] =data["datetime"].str.split("-", expand=True)
-data['year'] = data['year'].astype(int)
-data['month'] = data['month'].astype(int)
-data['day'] = data['day'].astype(int)
+data['year'] = data['year'][1:].astype(int)
+data['month'] = data['month'][1:].astype(int)
+data['day'] = data['day'][1:].astype(int)
 
 #make lists of the data
 flow = data.flow.values.tolist()
