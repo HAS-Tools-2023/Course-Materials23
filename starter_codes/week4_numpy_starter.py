@@ -22,7 +22,7 @@ print(filepath)
 # this in later sections. 
 
 #Read the data into a pandas dataframe
-data=pd.read_table(filepath, sep = '\t', skiprows=30,
+data=pd.read_table(filepath, sep = '\t', skiprows=31,
         names=['agency_cd', 'site_no', 'datetime', 'flow', 'code']
         )
 
