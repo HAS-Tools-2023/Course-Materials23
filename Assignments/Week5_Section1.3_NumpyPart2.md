@@ -38,7 +38,7 @@ This week you should submit the following (for more details on submitting throug
   1. An appropriate header,
   2. A summary of your forecast and how you made it
   3. Answers to all of the questions listed below
-  4. A refection on how things are going for you this week. Things you are getting, things you arent. Things you hope we'll cover. 
+  4. A refection on how things are going for you this week. Things you are getting, things you aren't. Things you hope we'll cover. 
 
 3. The python script you wrote to do your homework.  Just copy this script into the submission folder with the name 'lastname_HWx.py'. Note even if you have a free pass on the write up this week you should still complete all the exercises and submit your python script. 
 
@@ -55,4 +55,4 @@ This week you should submit the following (for more details on submitting throug
    - **HINT**: To fill in the year and month columns I recommend you use the functions `np.arange`, `np.tile` and `np.repeat`. 
    - 
 
-5. Don't forget to provide a reflection in your markdown file for the week on what was hard and what was easy and if htere was anythign you couldn't do. 
+5. Don't forget to provide a reflection in your markdown file for the week on what was hard and what was easy and if there was anything you couldn't do. 
