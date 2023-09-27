@@ -1,10 +1,10 @@
-## Week5: Pandas DataFrames
+## Week6: Pandas DataFrames
 
 ### Series vs Dataframes: 
 Basically the same but series are 1D (like a 1D numpy array but with an index that you can customize)  and dataframes have more than one colum
 
 ### What’s cool about dataframes: 
--	Tabular format of rows and coluns
+-	Tabular format of rows and columns
 -	We can have columns with different kinds of data
 -	Columns have names and we can access data this way 
 -	They have row indices too
@@ -12,10 +12,9 @@ Basically the same but series are 1D (like a 1D numpy array but with an index th
 -	Two ways to index and slice data; (1) using the index numbers like we did before, (2) using names
 -	Can handle no data as blanks, NAs or what ever other signifier you want. 
 
-### Methods: 
+### Some Key Methods: 
 -	Head – see the first n rows
-Tail – see the last n rows
--	
+-   Tail – see the last n rows
 -	Info – Get the details like size and names
 -	Describe – provides summary statistics on all numeric columns
 -	Median, mean, sum  – 
