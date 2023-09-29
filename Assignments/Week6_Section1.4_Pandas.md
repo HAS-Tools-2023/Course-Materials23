@@ -11,8 +11,8 @@ ___
 <a name="todo"></a>
 ## To Do List
 1. Complete the required training Activities by **next Tuesday**. Once again there is a lot of content this week so if you can start early  thats a good idea.
-2. Submit streamflow forecast and assignment by **noon on Monday October 2nd** following the instructions in the [ Forecast Assignment](#assignment).
-3. Submit your homework by **noon on Monday October 9th**
+2. Submit your homework and forecat by **5pm on Monday October 9th**
+3. **NO* homework or forecasts are due Monday October 2nd
 
 ___
 <a name="resources"></a>
