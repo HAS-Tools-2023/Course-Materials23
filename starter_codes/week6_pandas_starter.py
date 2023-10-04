@@ -41,8 +41,6 @@ data['day'] = data['day'].astype(int)
 # %%
 # 3. How do you select the streamflow column in `data`?
 
-#%%
-# 4. How do you plot the streamflow in `data`?
 
 #%%
 # 5. How do you get the last streamflow value from `data`?
