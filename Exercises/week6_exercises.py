@@ -40,16 +40,17 @@ data_frame.loc[['a', 'e']] = 3
 
 #%%
 # Exercise 1.2: multiply the first 4 rows by 7
-data_frame.iloc[:4,] = data_frame.iloc[:4, ] * 7
+data_frame.iloc[:4,:] = data_frame.iloc[:4,: ] * 7
+data_frame.loc[['a', 'b', 'c', 'c']]= data_frame.loc[['a', 'b', 'c', 'c']]*7
 
 #%%
 # Exercise 1.3:  Make the dataframe into a checkerboard  of 0's and 1's using loc
-#data_frame2 = data_frame * 0 +1
+data_frame2 = data_frame * 0 +1
 data_frame2.loc[['a', 'c', 'e', 'g'], ['data1', 'data3']] = 0
 data_frame2.loc[['b', 'd', 'f'], ['data2']] = 0
 
 # Exercise 1.4:  Do the same thing without using iloc
-#data_frame3 = data_frame * 0 +1
+data_frame3 = data_frame * 0 +1
 data_frame3.iloc[0:8:2, 0:3:2] = 0
 data_frame3.iloc[1:8:2, 1:3:2] = 0
 
