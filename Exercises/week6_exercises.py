@@ -38,9 +38,11 @@ data_frame.describe
 # Exercise 1.1:  Change the values for all of the vowel rows to 3
 data_frame.loc[['a', 'e']] = 3
 
+#%%
 # Exercise 1.2: multiply the first 4 rows by 7
-data_frame = data_frame.iloc[:4, ] * 7
+data_frame.iloc[:4,] = data_frame.iloc[:4, ] * 7
 
+#%%
 # Exercise 1.3:  Make the dataframe into a checkerboard  of 0's and 1's using loc
 #data_frame2 = data_frame * 0 +1
 data_frame2.loc[['a', 'c', 'e', 'g'], ['data1', 'data3']] = 0
