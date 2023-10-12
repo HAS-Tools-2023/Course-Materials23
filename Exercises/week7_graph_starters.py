@@ -22,6 +22,7 @@ ax.legend(loc='upper right')
 
 
 ## Plot 2: Scatter Plot
+plt.style.use('default')
 ax=data.plot.scatter(x='month', y='flow',
                      c='year', colormap='viridis', marker='x')
 ax.set_title("Monthly stream Flow")
@@ -33,19 +34,6 @@ plt.title('Streamflow')
 plt.ylabel('Count')
 
 ## Plot 4: Filled plot
-monthly_max = data.groupby(data.month).max()
-monthly_min = data.groupby(data.month).min()
-monthly_mean = data.groupby(data.month).mean()
-
-ax = plt.axes()
-ax.plot(monthly_mean.flow)
-ax.fill_between(monthly_mean.flow.index,
-                    monthly_min.flow.values,monthly_max.flow.values, alpha=0.2)
-ax.set_yscale("log")
-ax.set_xlabel("month")
-plt.axvline(3, color='black', linestyle='--')
-
-
 monthly_max = data.groupby(data.month).max()
 monthly_min = data.groupby(data.month).min()
 monthly_mean = data.groupby(data.month)["flow"].mean()
