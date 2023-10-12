@@ -152,6 +152,7 @@ ax.legend()
 # two subplots 
 fig,ax = plt.subplots(2,1)
 # then we refer to these  objects when we want to do the plotting
+x = np.linspace(-5 * np.pi, 5 * np.pi, 1000)
 ax[0].plot(x, np.sin(x))
 ax[1].plot(x, np.cos(x))
 
@@ -166,7 +167,8 @@ plt.subplot(2,1,2)
 plt.plot(x, np.cos(x))
 
 
-# Another example witha biger grid
+# Another example with a bigger grid
+plt.style.use('default')
 fig,ax = plt.subplots(2,2)
 ax = ax.flatten() #necessary because of the structure of the ax 
 # then we refer to these  objects when we want to do the plotting
@@ -175,12 +177,42 @@ ax[1].plot(x, np.cos(x))
 ax[2].plot(x, np.sin(x))
 ax[3].plot(x, np.cos(x))
 
-
 #Accomplishing the same thing as the previous one
 # but without the ax.flatten command
+fig, ax = plt.subplots(2, 2)
+# then we refer to these  objects when we want to do the plotting
+ax[0,0].plot(x, np.sin(x))
+ax[0,1].plot(x, np.cos(x))
+ax[1,0].plot(x, np.sin(x))
+ax[1,1].plot(x, np.cos(x))
+
+#Same as above but a different approach without the ax.flatten command
 fig, [[ax1, ax2], [ax3, ax4]] = plt.subplots(2,2)
 ax1.plot(x, np.sin(x))
 ax2.plot(x, np.cos(x))
 ax3.plot(x, np.sin(x))
 ax4.plot(x, np.cos(x))
+
+# %%
+# Now building off the previous example but adding some more features to our figure
+plt.style.use('default')
+fig, ax = plt.subplots(2, 2, sharex='col', sharey='row') #sharing x and y axes
+plt.subplots_adjust(hspace=0, wspace=0) #Getting rid of horizontal and vertical space between sbuplots
+plt.subplots_adjust(right=0.8)
+
+ax = ax.flatten()  
+ax[0].plot(x, np.sin(x), color='red', label='sin1')
+ax[0].set_ylabel("y-alue")  #notice I can set the y label the same as above but need to use ax[0] to be clear on what part of the plot i'm referring to
+ax[1].plot(x, np.cos(x), color='green', label = 'cos1')
+ax[2].plot(x, np.sin(x), label='sin2')
+ax[2].set_ylabel("y-value")
+ax[2].set_xlabel("x-value")
+ax[3].plot(x, np.cos(x), color='purple', label='cos2')
+ax[3].set_xlabel("x-value")
+
+fig.legend(shadow=True, loc='right')
+fig.suptitle('Mutli Panel Plot')
+plt.margins(x=3,y=3)
+
+
 # %%
