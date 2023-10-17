@@ -173,9 +173,9 @@ fig,ax = plt.subplots(2,2)
 ax = ax.flatten() #necessary because of the structure of the ax 
 # then we refer to these  objects when we want to do the plotting
 ax[0].plot(x, np.sin(x))
-ax[1].plot(x, np.cos(x))
+ax[1].plot(x, np.cos(x), color='green')
 ax[2].plot(x, np.sin(x))
-ax[3].plot(x, np.cos(x))
+ax[3].plot(x, np.cos(x), color="purple")
 
 #Accomplishing the same thing as the previous one
 # but without the ax.flatten command
@@ -183,7 +183,7 @@ fig, ax = plt.subplots(2, 2)
 # then we refer to these  objects when we want to do the plotting
 ax[0,0].plot(x, np.sin(x))
 ax[0,1].plot(x, np.cos(x))
-ax[1,0].plot(x, np.sin(x))
+#ax[1,0].plot(x, np.sin(x))
 ax[1,1].plot(x, np.cos(x))
 
 #Same as above but a different approach without the ax.flatten command
@@ -202,7 +202,7 @@ plt.subplots_adjust(right=0.8)
 
 ax = ax.flatten()  
 ax[0].plot(x, np.sin(x), color='red', label='sin1')
-ax[0].set_ylabel("y-alue")  #notice I can set the y label the same as above but need to use ax[0] to be clear on what part of the plot i'm referring to
+ax[0].set_ylabel("y-value")  #notice I can set the y label the same as above but need to use ax[0] to be clear on what part of the plot i'm referring to
 ax[1].plot(x, np.cos(x), color='green', label = 'cos1')
 ax[2].plot(x, np.sin(x), label='sin2')
 ax[2].set_ylabel("y-value")
@@ -212,7 +212,7 @@ ax[3].set_xlabel("x-value")
 
 fig.legend(shadow=True, loc='right')
 fig.suptitle('Mutli Panel Plot')
-plt.margins(x=3,y=3)
+
 
 
 # %%
