@@ -51,6 +51,7 @@ flow_describe['max']
 print(flow_describe.columns)
 #Note that there are two levels to this flow and then each of the values we want. 
 # To get out the value we want we have to say 
+flow_describe['flow']['max']
 flow_describe['flow', 'max']
 
 # Alternatively we could get rid of this heirarchy like this: 
@@ -82,5 +83,5 @@ all_describe['flow', 'max']
 
 f, ax = plt.subplots()
 ax.bar(all_describe.index,
-       flow_describe['flow', 'max'],
+       all_describe['flow', 'max'],
        color="purple")
