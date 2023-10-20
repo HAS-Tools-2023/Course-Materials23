@@ -1,11 +1,10 @@
 # %%
 # Import the modules we will use
-import os
+#import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from sklearn.linear_model import LinearRegression
-import datetime
+#import datetime
 
 # %%
 filename = 'streamflow_demo.txt'
@@ -80,14 +79,16 @@ ax.set(title="Observed Flow", xlabel="Date",
 # Setting a columns as datetime after the fact
 data3 = data.copy()
 print(data3.dtypes)
-data3['datatime'] = pd.to_datetime(data3['datetime'])
+data3['datetime'] = pd.to_datetime(data3['datetime'])
 print(data3.dtypes)
 
 # %%
 # With datetimes we can easily subset our values using the date info
 #Grab out just a year or a month 
-datai["2013"].head()
+datai[datai.index.year == 2103].head()
 datai[datai.index.month == 5]
+# or both 
+datai[(datai.index.year == 2103) &(datai.index.month == 5)]
 
 #See only the year component of the date
 datai.index.year

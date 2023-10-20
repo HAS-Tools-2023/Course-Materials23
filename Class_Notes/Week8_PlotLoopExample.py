@@ -40,7 +40,7 @@ fig.suptitle('Monthly Min Flow and Quartile (25%, 50%, 75%)')
 # %%
 # Modification 1: Pulling repeated values out as variables
 ylab='flow (cfs)'
-xlab='month'
+xlab='Month'
 xtic = [0, 2, 4, 6, 8, 10, 12]
 # Note two alternate approaches to creating this array of xtics would be: 
 # xtics = np.linspace(0,12,7)
@@ -76,7 +76,7 @@ fig.suptitle('Monthly Min Flow and Quartile (25%, 50%, 75%)')
 
 
 # %%
-# Modification 3: getting rid of redundant lines of code
+# Modification 3: putting this in a loop 
 #Grab out the column names from your dataframe
 col_names=monthly_flow.columns
 
@@ -89,6 +89,7 @@ print(col_names[pick_list])
 fig, ax = plt.subplots(2, 2)
 plt.subplots_adjust(hspace=0.6, wspace=0.4)
 ax = ax.flatten()
+
 for i in range(4):
     plot_col=pick_list[i]
     print('iteration', i, 'plotting column', plot_col, col_names[plot_col] )
