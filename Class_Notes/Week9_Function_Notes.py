@@ -37,7 +37,7 @@ my_two=two_outputs(5,5)
 my_one, my_two = two_outputs(5,5)
 
 # %%
-# You can also have your return statment change based on different conditions
+# You can also have your return statement change based on different conditions
 def my_abs(number):
     if number > 0:
         return number
