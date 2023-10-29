@@ -83,6 +83,7 @@ Provide a markdown file with a short reflection on:
 
 ___
 <a name="cheatsheet"></a>
+## Cheat Sheet
 Create a `cheat sheet`` on Pandas and Numpy covering the following: 
 #### Numpy: 
   - The general purpose of the numpy library
