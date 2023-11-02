@@ -15,8 +15,8 @@ data = pd.read_table('streamflow_demo.txt', sep='\t',skiprows=30, names=['agency
 #2.2: Explore this dataset and report what variables it contains, what date ranges are covered and the frequency of the data. 
 
 
-#2.3  Make a scatter plot of day length (dayl) vs maximum temperature. Fit a trend line 
+#2.3  Make a scatter plot of day length (dayl) vs maximum temperature.
 
 
-#2.4 Make a plot with three lines (1) average, (2) min and (3) max shortwave radiation (srad) vs the day of the year (i.e. 1-365)
+#2.4 Make a plot with three lines (1) average, (2) min and (3) max shortwave radiation (srad) vs the month of the year for all years after 2015.
 
