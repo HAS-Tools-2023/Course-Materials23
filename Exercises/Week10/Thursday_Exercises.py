@@ -12,11 +12,14 @@ data = pd.read_table('streamflow_demo.txt', sep='\t',skiprows=30, names=['agency
 
 #2.1: Read the 'daymet.csv' file in as a data frame using the 'date' column as the index and making sure to treat that column as a datetime object. 
 
+
 #2.2: Explore this dataset and report what variables it contains, what date ranges are covered and the frequency of the data. 
 
 
 #2.3  Make a scatter plot of day length (dayl) vs maximum temperature.
 
 
-#2.4 Make with a lines for the monthly average of `tmax (deg c)` for all months after jan 2015.  Add shading to the plot extending to the monthly minimum and maximum of `tmax (deg c)` for the same period.
+#2.4 Make a plot with lines for the monthly average of `tmax` for all months after Jan 2015.  Add shading to the plot extending to the monthly minimum and maximum of `tmax` for the same period.
+
+#Hint - Use the pandas resample function for datetime objects and the plt.fill type for the shading. 
 
