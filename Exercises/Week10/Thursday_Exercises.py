@@ -18,5 +18,5 @@ data = pd.read_table('streamflow_demo.txt', sep='\t',skiprows=30, names=['agency
 #2.3  Make a scatter plot of day length (dayl) vs maximum temperature.
 
 
-#2.4 Make a plot with three lines (1) average, (2) min and (3) max shortwave radiation (srad) vs the month of the year for all years after 2015.
+#2.4 Make with a lines for the monthly average of `tmax (deg c)` for all months after jan 2015.  Add shading to the plot extending to the monthly minimum and maximum of `tmax (deg c)` for the same period.
 
