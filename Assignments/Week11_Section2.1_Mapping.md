@@ -79,10 +79,10 @@ At a minimum you map must include:
 - A legend
 
 #### Submission Instructions
-1.  Add your map to our map gallery [here](https://docs.google.com/presentation/d/1Vx_A2FNrRM-08SPloBi5PI6AXIRu9lNdMyihj0gkxdE/edit?usp=sharing) follow the instructions slide to see what you should include on your slide.
-2. Submit the script you used to make your map to the `forecast repo` `class_scripts/maps`
+1.  Add your map to our map gallery [here]( https://docs.google.com/presentation/d/1iyfTfYRD-aye_6tn8H4WX-1VZx3uJIXe0akHy5zckCM/edit?usp=sharingfollow) the instructions slide to see what you should include on your slide.
+2. Submit the script you used to make your homework repo
   - Your script should be named `lastname_map.py`
   - Your script should be well commented, follow pep8 standards and be easy to follow.
-  - **Do not** upload the datasets for your map to the repo. Its okay if your script wont run from the forecast repo because its pointing to files you have locally.
+  - **Do not** upload the datasets for your map to the repo. Its okay if your script wont run because its pointing to files you have locally.
   - For each file you use include a comment with a link for where you got it.
   - This script should include only what is necessary to generate the map you submitted to the gallery. Don't include your forecast analysis here.
