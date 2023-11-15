@@ -39,7 +39,7 @@ url = "https://waterdata.usgs.gov/nwis/dv?cb_00060=on&format=rdb&site_no=0950600
        "&referred_module=sw&period=&begin_date=1989-01-01&end_date=2020-10-16"
 
 # Now we can read it with read_table command the same as we did before  
-data2 = pd.read_table(url, skiprows=30, names=['agency_cd', 'site_no','datetime', 'flow', 'code'],)
+data2 = pd.read_table(url, skiprows=30, names=['agency_cd', 'site_no','datetime', 'flow', 'code'],parse_dates=['datetime'], index_col='datetime')
 
 
 #Note that we can also use this to make our URL within our code
