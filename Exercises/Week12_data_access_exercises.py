@@ -26,6 +26,5 @@ import dataretrieval.nwis as nwis
 
 #2. Modify the API call to return accumulated precipitation instead (variable name = 'precip_accum', set the units to 'metric') and make a plot of the daily max accumulated precipitation
 
-# %%
-# Exercise 3: 
+
 

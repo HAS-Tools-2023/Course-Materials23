@@ -46,6 +46,9 @@ print(apiString)
 fullUrl = base_url + '?' + apiString
 print(fullUrl)
 
+## Alternate approach getting the full url from the Query builder online
+#fullUrl="https://api.synopticdata.com/v2/stations/timeseries?&token={INSERT YOUR TOKEN}&start=202301011201&end=202311161201&stid=QVDA3"
+
 # Now we are ready to request the data
 # this just gives us the API response... not very useful yet
 response = req.urlopen(fullUrl)
