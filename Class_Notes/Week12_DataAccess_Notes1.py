@@ -11,7 +11,7 @@ import dataretrieval.nwis as nwis
 # There are 3 ways to read data: 
 # 1) Load a file that you have locally using read_table
 # 2) Read a file using a URL for a Rest API using read_table 
-# 3) Useing packages for specific APIs
+# 3) Using packages for specific APIs
 
 # %%
 # Option 1: 
