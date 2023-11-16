@@ -21,7 +21,7 @@ import urllib
 # First Create the URL for the rest API
 # Setup your account and insert your token here
 # Follow these instructions: https://developers.synopticdata.com/mesonet/v2/getting-started/ 
-mytoken = '68281ca6a7274f04832692def93551ac'
+mytoken = ''
 
 # This is the base url that will be the start our final url
 base_url = "http://api.mesowest.net/v2/stations/timeseries"
