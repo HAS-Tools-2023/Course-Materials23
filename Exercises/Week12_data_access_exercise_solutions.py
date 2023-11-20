@@ -44,19 +44,23 @@ for s in site_list:
     temp_data=get_streamflow(s, start_date=start, end_date=end)
     if i ==0:
         flow = temp_data['flow']
-    flow=pd.concat(flow, temp_data['site_no'])
+    flow = pd.concat([flow, temp_data['flow']], axis=1)
 
 #%%
 #3. Make a timeseries plot showing the data from all 3 gauges on a single plot. 
+
 ax = plt.axes()
-ax.plot(camp_verde['datetime'], camp_verde['flow'], color= 'red', linestyle = 'dashed', label = 'Camp Verde')
-ax.plot(clarkdale['datetime'], clarkdale['flow'], color= 'blue', linestyle = 'dashed', label = 'Clarkdale')
-ax.plot(paulden['datetime'], paulden['flow'], color= 'green', linestyle = 'dashed', label = 'Paulden')
+ax.plot(camp_verde['flow'], color= 'red', linestyle = 'dashed', label = 'Camp Verde')
+ax.plot(clarkdale['flow'], color= 'blue', linestyle = 'dashed', label = 'Clarkdale')
+ax.plot(paulden['flow'], color= 'green', linestyle = 'dashed', label = 'Paulden')
+
 ax.set(title="Observed Flow", xlabel="Date",
        ylabel="log(Streamflow [cfs])",
        yscale='log')
 ax.legend()
 
+# Rotate x-axis tick labels
+plt.xticks(rotation=45)
 
 # %%
 #____________________________
