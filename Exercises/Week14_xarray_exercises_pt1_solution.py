@@ -57,7 +57,8 @@ for var in variables_to_download:
 # what's in the data.
 
 # TODO: Your code here
-test=xr.open_dataset('pet_2020.nc')
+ds = xr.open_mfdataset(downloaded_files)
+ds
 
 #%%
 # Step 2:
@@ -68,7 +69,8 @@ test=xr.open_dataset('pet_2020.nc')
 # dataset.
 
 #TODO: Your code here
-
+ds = ds.drop('crs')
+ds
 
 #%%
 # Step 3:
@@ -79,7 +81,8 @@ test=xr.open_dataset('pet_2020.nc')
 # of the dataset is and print that out.
 
 # TODO: Your code here
-
+attrs = ds.attrs
+print(attrs['author'])
 
 #%%
 # Step 4:
@@ -91,13 +94,14 @@ test=xr.open_dataset('pet_2020.nc')
 # and "units" in the variables attributes. 
 # Print them out below.
 
-# Hint1: To look at every variable in a dataset you can
-# write a for loop that loops over every variable like this:  for var in ds:
-# Hint2: You can access the variable like this: ds[var] and you can get its attributes with the .attrs property  
-
 #TODO: Your code here
-for var in ds: 
-    ....
+for var in ds:
+    data = ds[var]
+    data_attrs = data.attrs
+    description = data_attrs['description']
+    units = data_attrs['units']
+    print(description, units)
+    #print(ds[var].attrs['description'], ds[var].attrs#['units'])
 
 
 # %%
@@ -106,7 +110,8 @@ for var in ds:
 # and assign it to the `first_ds` variable
 
 # TODO: Your code here
-
+first_ds = ds.isel(day=0) 
+first_ds
 
 # %%
 # Step 6:
@@ -121,8 +126,7 @@ first_ds['mean_vapor_pressure_deficit'].plot()
 # Similarly, make a spatial plot of the variable
 # "potential_evapotranspiration".
 
-# TODO: Your code here
-
+first_ds['potential_evapotranspiration'].plot()
 
 # %%
 # Step 8:
@@ -130,7 +134,11 @@ first_ds['mean_vapor_pressure_deficit'].plot()
 # and 20th to 40th entries of longitude
 # from the full `ds`
 #TODO: Your code here
-
+subset_ds = ds.isel(
+    lat=slice(0, 30),
+    lon=slice(20, 40)
+)
+subset_ds   
 
 #%%
 # Step 9:
@@ -138,10 +146,11 @@ first_ds['mean_vapor_pressure_deficit'].plot()
 # take a spatial average. That is
 # take the "mean" across the "lat"
 # and "lon" dimensions.
-# Save this to a new variable called `spatial_mean_ds`
 
 # TODO: Your code here
-
+reduce_dims = ['lat', 'lon']
+spatial_mean_ds = subset_ds.mean(reduce_dims)
+spatial_mean_ds
 
 # %%
 # Step 10:
@@ -151,12 +160,8 @@ first_ds['mean_vapor_pressure_deficit'].plot()
 # Do these look correlated to you?
 fig, axes = plt.subplots(2, 1, figsize=(12, 8))
 
-spatial_mean_ds[
-    'potential_evapotranspiration'
-].plot(ax=axes[0])
-spatial_mean_ds[
-    'mean_vapor_pressure_deficit'
-].plot(ax=axes[1])
+spatial_mean_ds[ 'potential_evapotranspiration'].plot(ax=axes[0])
+spatial_mean_ds['mean_vapor_pressure_deficit'].plot(ax=axes[1])
 
 # %%
 # Step 11:
@@ -182,6 +187,10 @@ spatial_mean_ds.plot.scatter(
 # ]
 # 
 # TODO: Your code here
+np.corrcoef(
+    spatial_mean_ds['potential_evapotranspiration'],
+    spatial_mean_ds['mean_vapor_pressure_deficit'],
+)
 
 
 # %%
@@ -205,6 +214,7 @@ spatial_mean_ds.plot.scatter(
 #coarse_amount = dict(name=number)
 #coarse_amount = {name: number}
 #coarse_amount = None
+coarse_amount = {'lon': 4, 'lat': 4}
 
 coarse_ds = ds.coarsen(
     coarse_amount, 
@@ -219,7 +229,7 @@ coarse_ds
 # over the "day", "dimension". 
 
 # TODO: Your code here
-correlation = None
+correlation = xr.corr(coarse_ds['potential_evapotranspiration'], coarse_ds['mean_vapor_pressure_deficit'], dim='day')
 correlation
 
 # %%
@@ -238,9 +248,9 @@ correlation
 # do these variables tend to be decoupled?
 
 # TODO: Your code here
-
+correlation.plot()
 
 # %%
 # Congratulations that's it for this assignment!
 # Go ahead and submit your completed script to 
-# GitHub.
+# GitHub. For the second part of 
